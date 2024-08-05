@@ -123,3 +123,7 @@ loopme.com, 11463, RESELLER, 6c8d5f95897a5a3b
 loopme.com, 11635, RESELLER, 6c8d5f95897a5a3b
 loopme.com, 9621, RESELLER, 6c8d5f95897a5a3b
 toponad.com, 165535463cfb70, RESELLER, 1d49fe424a1a456d
+pubwise.io, 22376824, RESELLER, c327c91a93a7cdd3
+lijit.com, 491737, RESELLER, fafdf38b16bf6b2b
+video.unrulymedia.com, 1058378980, RESELLER
+connekt.ai, 1732945743, RESELLER

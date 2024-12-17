@@ -152,3 +152,5 @@ pubmatic.com, 165438, RESELLER, 5d62403b186f2ace
 onetag.com, 8c90176af2e65c8, RESELLER
 video.unrulymedia.com, 498216989, RESELLER
 eskimi.com, 2020000545, RESELLER
+pubnative.net, 1009988, RESELLER, d641df8625486a7b
+thunder-monetize.com, 8221217003, RESELLER

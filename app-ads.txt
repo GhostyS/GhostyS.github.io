@@ -154,3 +154,5 @@ video.unrulymedia.com, 498216989, RESELLER
 eskimi.com, 2020000545, RESELLER
 pubnative.net, 1009988, RESELLER, d641df8625486a7b
 thunder-monetize.com, 8221217003, RESELLER
+openx.com, 540871654, RESELLER, 6a698e2ec38604c6
+tradplusad.com, b3fca24bd11c1242, RESELLER

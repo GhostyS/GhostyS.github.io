@@ -231,3 +231,6 @@ pubwise.io, 22376824, reseller, c327c91a93a7cdd3
 start.io, 116712987, reseller
 thebrave.io, 1234634, direct, c25b2154543746ac
 thebrave.io, 1234764, direct, c25b2154543746ac
+sharethrough.com, sniqcomc, RESELLER, d53b998a7bd4ecd2
+smartadserver.com, 5294, RESELLER, 060d053dcf45cbf3
+sharethrough.com, 5294, RESELLER, d53b998a7bd4ecd2

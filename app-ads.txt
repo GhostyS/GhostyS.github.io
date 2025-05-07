@@ -288,3 +288,9 @@ improvedigital.com, 2371, RESELLER
 video.unrulymedia.com, 3881266972, RESELLER
 sonobi.com, 2b51f34067, RESELLER, d1a215d9eb5aee9e
 iion.io, 10162, RESELLER
+thebrave.io, 1234634, RESELLER, c25b2154543746ac
+ushareit.com, LCb555b3bc8667a09a, RESELLER
+betweendigital.com, 45827, RESELLER
+themediagrid.com, FALINO, RESELLER, 35d5010d7789b49d
+lacunads.com, LCb555b3bc8667a09a, RESELLER
+thebrave.io, 1234764, RESELLER, c25b2154543746ac

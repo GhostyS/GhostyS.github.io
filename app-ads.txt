@@ -286,3 +286,5 @@ themediagrid.com, A6CWLO, RESELLER, 35d5010d7789b49d
 themediagrid.com, FALINO, RESELLER, 35d5010d7789b49d
 tradplusad.com, b3fca24bd11c1242, RESELLER
 adform.com, 716, RESELLER
+taurusx.com, 80635, RESELLER
+advertising.com, 82632, RESELLER

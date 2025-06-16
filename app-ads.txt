@@ -297,3 +297,5 @@ pubmatic.com, 166078, RESELLER, 5d62403b186f2ace
 lijit.com, 558045, RESELLER, fafdf38b16bf6b2b
 copper6.com, 766114, RESELLER
 improvedigital.com, 2534, RESELLER
+zmaticoo.com, 5135063, RESELLER
+bidmachine.io, 113, RESELLER

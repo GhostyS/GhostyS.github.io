@@ -299,3 +299,4 @@ copper6.com, 766114, RESELLER
 improvedigital.com, 2534, RESELLER
 zmaticoo.com, 5135063, RESELLER
 bidmachine.io, 113, RESELLER
+improvedigital.com, 2609, RESELLER

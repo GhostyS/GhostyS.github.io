@@ -1,11 +1,326 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-		<a href = "simple_football_privacy.html"> SimpleFootball privacy policy</a>
-		<a href = "aim-reaction_privacy.html"> AIM - reaction, attention privacy policy</a>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>My GitHub Pages | Beautiful Hub</title>
+    <!-- Google Fonts & simple reset for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #f9fafc 0%, #eef2f5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            line-height: 1.5;
+            color: #1a2c3e;
+        }
+
+        /* main card container */
+        .glass-card {
+            max-width: 780px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(2px);
+            border-radius: 3rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+
+        /* decorative top gradient bar */
+        .hero-glow {
+            background: linear-gradient(135deg, #1e2f3f 0%, #2c4c6e 100%);
+            height: 8px;
+            width: 100%;
+        }
+
+        /* inner content */
+        .content {
+            padding: 2.5rem 2.2rem 3rem 2.2rem;
+        }
+
+        /* header area with avatar/icon */
+        .profile-badge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .icon-circle {
+            background: linear-gradient(135deg, #2b5876, #1e3c5c);
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 18px -6px rgba(0,0,0,0.2);
+        }
+
+        .icon-circle svg {
+            width: 36px;
+            height: 36px;
+            stroke: white;
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .icon-circle .fill-icon {
+            fill: white;
+            stroke: none;
+        }
+
+        .title-section h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(130deg, #1f3b4c, #2c6285);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.2rem;
+        }
+
+        .title-section p {
+            color: #4a627a;
+            font-weight: 400;
+            font-size: 1rem;
+            border-left: 3px solid #3c8dbc;
+            padding-left: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .greeting-text {
+            font-size: 1.05rem;
+            color: #2c3e44;
+            background: #eef3fc;
+            padding: 1rem 1.3rem;
+            border-radius: 1.8rem;
+            margin: 1.8rem 0 2rem 0;
+            border: 1px solid rgba(60, 141, 188, 0.2);
+            backdrop-filter: blur(2px);
+            font-weight: 450;
+        }
+
+        /* card grid for policy links */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .policy-card {
+            background: white;
+            border-radius: 1.8rem;
+            transition: all 0.25s ease;
+            border: 1px solid #e2edf2;
+            box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .policy-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 28px -14px rgba(0, 32, 54, 0.2);
+            border-color: #cbdde6;
+        }
+
+        .policy-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 1.8rem;
+            text-decoration: none;
+            color: #1f3e4b;
+            font-weight: 600;
+            font-size: 1.2rem;
+            background: white;
+            transition: background 0.2s;
+        }
+
+        .policy-link .left-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .doc-icon {
+            background: #eef2fa;
+            width: 42px;
+            height: 42px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.2s;
+        }
+
+        .policy-card:hover .doc-icon {
+            background: #d9e6f2;
+            transform: scale(1.02);
+        }
+
+        .policy-name {
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+
+        .policy-desc {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #5b7b91;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .arrow-icon {
+            font-size: 1.6rem;
+            color: #8aaec0;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .policy-card:hover .arrow-icon {
+            transform: translateX(5px);
+            color: #2c6285;
+        }
+
+        /* footer style */
+        .footer-note {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6c8ba0;
+            border-top: 1px solid rgba(100, 130, 150, 0.2);
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-note span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .badge {
+            background: #e9f0f5;
+            padding: 0.25rem 0.7rem;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #2b5e7a;
+        }
+
+        @media (max-width: 550px) {
+            .content {
+                padding: 1.8rem;
+            }
+            .title-section h1 {
+                font-size: 1.9rem;
+            }
+            .policy-link {
+                padding: 1rem 1.2rem;
+                flex-wrap: wrap;
+            }
+            .policy-name {
+                font-size: 1rem;
+            }
+            .arrow-icon {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* subtle floating animation for main heading */
+        @keyframes softRise {
+            0% { opacity: 0; transform: translateY(12px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        .content > * {
+            animation: softRise 0.45s ease-out forwards;
+        }
+        .policy-card:nth-child(1) { animation-delay: 0.05s; }
+        .policy-card:nth-child(2) { animation-delay: 0.1s; }
+        .greeting-text { animation-delay: 0s; }
+    </style>
+</head>
+<body>
+<div class="glass-card">
+    <div class="hero-glow"></div>
+    <div class="content">
+        <div class="profile-badge">
+            <div class="icon-circle">
+                <!-- simple globe / code icon representing GitHub Pages -->
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="white" fill="none"/>
+                    <path d="M12 2v20M2 12h20" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="12" cy="12" r="4" stroke="white" fill="none"/>
+                </svg>
+            </div>
+            <div class="title-section">
+                <h1>Hello World</h1>
+                <p>I'm hosted with GitHub Pages</p>
+            </div>
+        </div>
+
+        <div class="greeting-text">
+            ✨ Welcome to my digital space — a clean, transparent hub for my projects. 
+            Below you'll find privacy policies for my apps, because your trust matters.
+        </div>
+
+        <div class="links-container">
+            <!-- Simple Football Privacy Card -->
+            <div class="policy-card">
+                <a href="simple_football_privacy.html" class="policy-link">
+                    <div class="left-info">
+                        <div class="doc-icon">⚽️</div>
+                        <div>
+                            <div class="policy-name">SimpleFootball</div>
+                            <span class="policy-desc">Privacy policy · Fair play & data handling</span>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+            </div>
+
+            <!-- AIM - reaction, attention Privacy Card -->
+            <div class="policy-card">
+                <a href="aim-reaction_privacy.html" class="policy-link">
+                    <div class="left-info">
+                        <div class="doc-icon">🎯</div>
+                        <div>
+                            <div class="policy-name">AIM - reaction, attention</div>
+                            <span class="policy-desc">Privacy policy · Focus training transparency</span>
+                        </div>
+                    </div>
+                    <div class="arrow-icon">→</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            <span>🔒 Your privacy, our commitment</span>
+            <span>📄 Policies updated 2026</span>
+            <span class="badge">GitHub Pages</span>
+        </div>
+    </div>
+</div>
+</body>
 </html>
 
 

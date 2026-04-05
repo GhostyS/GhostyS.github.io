@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Политика конфиденциальности | Игра "Симулятор смерти" (Кликер)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #1a0f0f 0%, #0a0507 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #f0e6e6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(20, 12, 15, 0.92);
+            backdrop-filter: blur(2px);
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(180, 70, 70, 0.25);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem;
+            transition: all 0.2s ease;
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1.2rem;
+                border-radius: 1.5rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f5c4c4, #b55555);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+            border-left: 5px solid #aa2e2e;
+            padding-left: 1rem;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #bf9a9a;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #3a2525;
+            padding-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .last-updated {
+            background: #2a1818b3;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: normal;
+            color: #e7c2c2;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #efc9c9;
+            border-left: 4px solid #b53b3b;
+            padding-left: 0.9rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.5rem 0;
+            color: #ffdfdf;
+        }
+
+        p, li {
+            color: #d4c0c0;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .highlight-box {
+            background: #1f1217;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #b9534e;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            background: #2f1e1e;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: #ffafaf;
+            margin-right: 0.5rem;
+        }
+
+        ul, ol {
+            margin: 0.5rem 0 1rem 1.8rem;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        a {
+            color: #dd8a8a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b54b4b;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        hr {
+            margin: 1.8rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #5e3a3a, transparent);
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #a27a7a;
+            border-top: 1px solid #362222;
+            padding-top: 1.5rem;
+        }
+
+        .note {
+            background: #1e1217b3;
+            border-radius: 1rem;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .button-like {
+            display: inline-block;
+            background: #442a2a;
+            border-radius: 30px;
+            padding: 0.2rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Политика конфиденциальности</h1>
+    <div class="subhead">
+        <span>💀 Игра-кликер «Симулятор смерти»</span>
+        <span class="last-updated">📅 Актуально с: 01 апреля 2026 г.</span>
+    </div>
+
+    <p><strong>Добро пожаловать в загробный мир кликера!</strong> Ваша анонимность — наш абсолютный приоритет. В этой Политике объясняется, какую информацию собирает, использует и передаёт мобильное приложение <strong>«Симулятор смерти»</strong> (далее — «Игра», «Мы», «Наше приложение»). Игра не хранит ваши личные данные. <strong>Единственное исключение — рекламная платформа Unity LevelPlay</strong>, которая помогает нам оставаться на плаву и не хоронить проект раньше времени.</p>
+
+    <div class="highlight-box">
+        <p>⚰️ <strong>Главное правило:</strong> «Симулятор смерти» не собирает ваше имя, почту, телефон, геолокацию или файлы. Ваши смерти, клики и рекорды живут только на вашем устройстве и умирают вместе с удалением игры. Вся сторонняя обработка ограничена SDK рекламы.</p>
+    </div>
+
+    <h2>1. Какие данные могут быть собраны рекламным SDK (Unity LevelPlay)</h2>
+    <p>В игре используется рекламная платформа <strong>Unity LevelPlay (ранее IronSource)</strong>. Она может автоматически обрабатывать технические данные для показа рекламы. Вот что попадает в её «чёрный ящик»:</p>
+    <ul>
+        <li><span class="badge">💀</span> IP-адрес устройства (для примерного региона);</li>
+        <li><span class="badge">📱</span> Рекламный идентификатор (IDFA на iOS / GAID на Android);</li>
+        <li><span class="badge">⚙️</span> Модель устройства, версия ОС, язык, часовой пояс;</li>
+        <li><span class="badge">📶</span> Тип соединения (Wi-Fi / мобильные данные);</li>
+        <li><span class="badge">👻</span> Данные о просмотре рекламы (клики, завершение роликов, вознаграждения);</li>
+        <li><span class="badge">🔧</span> Технические логи для стабильности и защиты от накрутки.</li>
+    </ul>
+    <p><strong>Сами мы ничего не передаём</strong> — ни количество ваших кликов, ни «уровень смерти», ни личные заметки. Вся игровая статистика хранится локально.</p>
+
+    <h2>2. Зачем это нужно?</h2>
+    <p>Мы показываем рекламу (иногда за бонусы, иногда по желанию), чтобы вы могли получать дополнительную валюту в игре. Без рекламы «Симулятор смерти» не смог бы существовать. Unity LevelPlay использует данные для:</p>
+    <ul>
+        <li>✅ Показа рекламы, которая хоть немного соответствует вашим интересам;</li>
+        <li>✅ Ограничения частоты — чтобы вас не засыпали роликами;</li>
+        <li>✅ Анализа эффективности и честности показов;</li>
+        <li>✅ Улучшения стабильности SDK.</li>
+    </ul>
+    <p>Мы не имеем доступа к «сырым» персональным данным, которые собирает рекламная сеть. Всей этой информацией управляет Unity Technologies.</p>
+
+    <h2>3. Передача данных третьим лицам</h2>
+    <p>Unity LevelPlay может делиться данными со своими партнёрами (рекламными сетями, биржами трафика) для выполнения своей работы. <strong>Никакой передачи данных напрямую от нас</strong> не происходит. Мы не продаём информацию о вас — её просто не у кого покупать.</p>
+    <div class="note">
+        🧛 <strong>Важно:</strong> «Симулятор смерти» не использует собственные серверы, не собирает метрики и не следит за вашими действиями за пределами кликов по экрану.
+    </div>
+
+    <h2>4. Как отключить персонализацию рекламы</h2>
+    <p>Вы можете ограничить сбор данных через настройки вашего устройства:</p>
+    <ul>
+        <li><strong>Android:</strong> Настройки → Google → Реклама → Сбросить рекламный ID / Отключить персонализацию.</li>
+        <li><strong>iOS:</strong> Настройки → Конфиденциальность → Apple Advertising → Выключить персонализированную рекламу.</li>
+    </ul>
+    <p>При первом запуске игры может появиться запрос на отслеживание (ATT на iOS). Вы вправе отказаться — это никак не повлияет на механику кликера, но реклама станет менее релевантной. Также поддерживаются сигналы Global Privacy Control.</p>
+
+    <h2>5. Дети и несовершеннолетние</h2>
+    <p>«Симулятор смерти» создан для развлечения взрослой аудитории (тематика смерти и кликер-механики). Мы не собираем данные о возрасте. Если вам меньше 13 лет — пожалуйста, не используйте игру. Родители, пожалуйста, контролируйте активность детей. Если вы считаете, что рекламный SDK мог получить данные ребёнка — напишите нам.</p>
+
+    <h2>6. Безопасность и хранение</h2>
+    <p>Все данные, собранные Unity LevelPlay, хранятся согласно стандартам Unity Technologies. У нас нет своего сервера, поэтому утечка данных через нашу игру невозможна. Рекомендуем скачивать «Симулятор смерти» только из официальных магазинов (Google Play, App Store).</p>
+
+    <h2>7. Ваши права (GDPR, CCPA, 152-ФЗ)</h2>
+    <p>Если вы находитесь в Европейской экономической зоне, Великобритании, Бразилии или Калифорнии — вы имеете право на доступ, удаление или ограничение обработки ваших данных. Поскольку прямым оператором данных является <strong>Unity LevelPlay</strong>, обращаться с такими запросами нужно к ним:</p>
+    <ul>
+        <li>🔗 <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Политика конфиденциальности Unity</a></li>
+        <li>🔗 <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Политика IronSource (LevelPlay)</a></li>
+    </ul>
+    <p>Мы, как разработчики, поможем вам в разумных пределах — просто напишите нам.</p>
+    <div class="highlight-box">
+        <p>🪦 <strong>Управление согласием в игре:</strong> При первом запуске для игроков из регионов с жёсткими законами о приватности показывается баннер выбора предпочтений (на базе IAB TCF). Вы всегда можете изменить выбор в настройках игры (меню «Конфиденциальность»).</p>
+    </div>
+
+    <h2>8. Сторонние ссылки</h2>
+    <p>Наша политика не распространяется на действия Unity LevelPlay. Пожалуйста, читайте их документы:</p>
+    <ul>
+        <li>🔗 <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a></li>
+        <li>🔗 <a href="https://levelplay.com/privacy-policy" target="_blank" rel="noopener noreferrer">LevelPlay Privacy Center</a></li>
+    </ul>
+
+    <h2>9. Изменения в политике</h2>
+    <p>Мы можем обновлять эту страницу, если изменится рекламный партнёр или законодательство. О крупных изменениях сообщим через обновление в магазине приложений. Дата последней правки — в шапке документа.</p>
+
+    <h2>10. Контакты (связь с мертвецами)</h2>
+    <p>Если у вас есть вопросы по этой политике, по обработке данных через рекламу или если вы просто нашли баг в кликере — пишите:</p>
+    <p>📧 <strong>Электронная почта:</strong> <a href="mailto:privacy@deathsimulatorgame.com">privacy@deathsimulatorgame.com</a><br>
+    💀 <strong>Форма обратной связи:</strong> в будущих обновлениях появится в игре. А пока — через магазин приложений.</p>
+    <p>Мы отвечаем в течение 30 дней (если нас не убьют раньше).</p>
+
+    <hr>
+
+    <h2>Для пользователей из России и СНГ</h2>
+    <p>В соответствии с ФЗ-152 «О персональных данных»: оператором данных через рекламный SDK является Unity Technologies. «Симулятор смерти» не осуществляет трансграничную передачу и не собирает биометрию. Все рекламные идентификаторы обезличены. Вы можете обратиться к нам за разъяснениями.</p>
+
+    <div class="note">
+        💀 <strong>Ещё раз про анонимность:</strong> Игра «Симулятор смерти» не знает, кто вы, где живёте и сколько вам лет. Ваши клики, рекорды и собранная «энергия смерти» остаются только на вашем телефоне. Никаких логов, никаких серверов. Только локальный ад.
+    </div>
+
+    <footer>
+        © 2026 «Симулятор смерти» — кликер, в котором смерть — это только начало. <br>
+        Политика действует для всех версий на Google Play и App Store.
+    </footer>
+</div>
+</body>
+</html>
